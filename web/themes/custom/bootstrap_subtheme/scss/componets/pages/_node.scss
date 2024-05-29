@@ -1,0 +1,25 @@
+.node--type-article.node--view-mode-full, .node--type-news.node--view-mode-full {
+  .field--type-image {
+    float: unset;
+  }
+
+  .field--name-field-image {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+
+  .node__title {
+    @extend .position-center;
+  }
+
+
+  .article-banner {
+    max-height: 450px;
+  }
+}

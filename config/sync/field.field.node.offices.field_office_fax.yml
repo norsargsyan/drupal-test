@@ -1,0 +1,21 @@
+uuid: b6863588-8431-4529-b474-b817e0a3e4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_fax
+    - node.type.offices
+  module:
+    - telephone
+id: node.offices.field_office_fax
+field_name: field_office_fax
+entity_type: node
+bundle: offices
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

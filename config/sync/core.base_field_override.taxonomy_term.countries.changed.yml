@@ -1,0 +1,18 @@
+uuid: dddd197a-031a-4133-a2dd-3a0129ea81a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.countries
+id: taxonomy_term.countries.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: countries
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

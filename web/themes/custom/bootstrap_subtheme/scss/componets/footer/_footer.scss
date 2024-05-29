@@ -1,0 +1,18 @@
+.region-footer-first {
+  .navbar-brand {
+    text-align: center;
+    @extend .d-block;
+  }
+}
+
+.region-footer-second {
+  @extend .navbar, .navbar-expand-lg;
+
+  .block-menu.navigation.menu--main {
+    @extend .col;
+
+    .nav.navbar-nav {
+      @extend .justify-content-center;
+    }
+  }
+}

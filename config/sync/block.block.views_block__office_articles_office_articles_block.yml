@@ -1,0 +1,30 @@
+uuid: 8b49be39-1736-4161-95a8-29b259bdc8b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.office_articles
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_subtheme
+id: views_block__office_articles_office_articles_block
+theme: bootstrap_subtheme
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:office_articles-office_articles_block'
+settings:
+  id: 'views_block:office_articles-office_articles_block'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/office/*'

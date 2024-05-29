@@ -1,0 +1,81 @@
+uuid: bc683198-6b3b-491a-a2fb-56447b7a6de8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.offices.field_office_address
+    - field.field.node.offices.field_office_contact_person
+    - field.field.node.offices.field_office_country
+    - field.field.node.offices.field_office_email
+    - field.field.node.offices.field_office_fax
+    - field.field.node.offices.field_office_featured_image
+    - field.field.node.offices.field_office_tel
+    - image.style.focal_point
+    - node.type.offices
+  module:
+    - address
+    - image
+    - user
+id: node.offices.default
+targetEntityType: node
+bundle: offices
+mode: default
+content:
+  field_office_address:
+    type: address_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_office_contact_person:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_office_email:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_office_fax:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_office_featured_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: focal_point
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_office_tel:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_office_country: true
+  langcode: true
+  search_api_excerpt: true

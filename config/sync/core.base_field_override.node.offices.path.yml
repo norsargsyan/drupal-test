@@ -1,0 +1,20 @@
+uuid: 9f28c78c-ff8a-4799-8487-e9bad4dc5730
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.offices
+  module:
+    - path
+id: node.offices.path
+field_name: path
+entity_type: node
+bundle: offices
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

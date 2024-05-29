@@ -1,0 +1,14 @@
+.block-calibrate-core.block-banner-block {
+  margin: 0;
+  padding: 0;
+
+  .banner-block-wrapper {
+    max-height: 500px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

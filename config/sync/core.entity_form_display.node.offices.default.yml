@@ -1,0 +1,114 @@
+uuid: f8b8aeb9-a1b5-4a57-9ee8-c05af2ffe247
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.offices.field_office_address
+    - field.field.node.offices.field_office_contact_person
+    - field.field.node.offices.field_office_country
+    - field.field.node.offices.field_office_email
+    - field.field.node.offices.field_office_fax
+    - field.field.node.offices.field_office_featured_image
+    - field.field.node.offices.field_office_tel
+    - image.style.thumbnail
+    - node.type.offices
+  module:
+    - address
+    - focal_point
+    - path
+    - telephone
+id: node.offices.default
+targetEntityType: node
+bundle: offices
+mode: default
+content:
+  field_office_address:
+    type: address_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_office_contact_person:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_office_country:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_office_email:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_office_fax:
+    type: telephone_default
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_office_featured_image:
+    type: image_focal_point
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  field_office_tel:
+    type: telephone_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  translation: true
+  uid: true

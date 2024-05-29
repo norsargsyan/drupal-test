@@ -1,0 +1,23 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+// typography
+@import "typography";
+//bootstrap
+@import "bootstrap";
+//material design bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
+// mixins
+@import "mixins";
+// barrio
+@import "barrio";
+
+@import "componets/blocks/calibrate";
+@import "componets/blocks/latest";
+@import "componets/blocks/tags_facets";
+@import "componets/footer/footer";
+@import "componets/footer/footer";
+@import "componets/navigation/main_navbar";
+@import "componets/pages/node";

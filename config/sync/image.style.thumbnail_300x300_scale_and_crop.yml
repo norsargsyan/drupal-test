@@ -1,0 +1,15 @@
+uuid: a6cddd5a-e1b7-443e-80e8-2e8fd0c91fcb
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_300x300_scale_and_crop
+label: 'Thumbnail (300x300) Scale and Crop'
+effects:
+  69089867-ca7b-426e-9fb8-1a87dc37ce9b:
+    uuid: 69089867-ca7b-426e-9fb8-1a87dc37ce9b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 250
+      anchor: center-center

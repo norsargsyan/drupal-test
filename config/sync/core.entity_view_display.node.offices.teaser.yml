@@ -1,0 +1,36 @@
+uuid: 994342ff-686e-40ef-acd9-189a9a2d1601
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.offices.field_office_address
+    - field.field.node.offices.field_office_contact_person
+    - field.field.node.offices.field_office_country
+    - field.field.node.offices.field_office_email
+    - field.field.node.offices.field_office_fax
+    - field.field.node.offices.field_office_featured_image
+    - field.field.node.offices.field_office_tel
+    - node.type.offices
+  module:
+    - user
+id: node.offices.teaser
+targetEntityType: node
+bundle: offices
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_office_address: true
+  field_office_contact_person: true
+  field_office_country: true
+  field_office_email: true
+  field_office_fax: true
+  field_office_featured_image: true
+  field_office_tel: true
+  langcode: true
+  search_api_excerpt: true

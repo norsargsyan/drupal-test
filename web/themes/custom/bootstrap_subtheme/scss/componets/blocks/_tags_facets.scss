@@ -1,0 +1,17 @@
+.block-facets.block-facet-blocktags {
+  ul {
+    text-align: right;
+
+    li {
+      display: inline;
+
+      &:after {
+        content: ", ";
+      }
+
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+}

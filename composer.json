@@ -1,0 +1,130 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/address": "^1.12",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/block_classes": "^1.0",
+        "drupal/bootstrap_sass": "^5.0",
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-project-message": "^10.0",
+        "drupal/core-recommended": "^10.0",
+        "drupal/devel": "^5.1",
+        "drupal/examples": "^4.0",
+        "drupal/extra_field": "^2.3",
+        "drupal/facets": "^2.0",
+        "drupal/focal_point": "^2.0",
+        "drupal/gin": "^3.0@rc",
+        "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/layout_paragraphs": "^2.0",
+        "drupal/media_library_form_element": "^2.0",
+        "drupal/paragraphs": "^1.15",
+        "drupal/paragraphs_asymmetric_translation_widgets": "^1.2",
+        "drupal/pathauto": "^1.11",
+        "drupal/search_api": "^1.29",
+        "drupal/typed_data": "^1.0@beta",
+        "drupal/webform": "^6.2@beta",
+        "drush/drush": "^11.5"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        },
+        "patches": {
+            "drupal/paragraphs": {
+                "2904705 - Support asymmetric translation in experimental widget": "https://www.drupal.org/files/issues/2022-03-18/2904705-128_0.patch"
+            },
+            "drupal/paragraphs_asymmetric_translation_widgets": {
+                "3035916 - Translation Problem with Paragraph 1.6 and Paragraphs asymmetric translation widgets 1.0-beta1": "https://www.drupal.org/files/issues/2020-05-06/3035916-10.patch",
+                "3358805 - EntityStorageException on paragraphs_asymmetric_translation_widgets_entity_translation_delete entityQuery": "https://www.drupal.org/files/issues/2023-05-08/paragraphs_asymmetric_translation_widgets-entity-query-access-3358805-2.patch"
+            }
+        }
+    },
+    "require-dev": {
+        "drupal/coder": "8.3.13"
+    }
+}

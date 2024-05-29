@@ -1,0 +1,58 @@
+display:
+  default:
+    display_title: Standaard
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Actie
+        subject:
+          label: Onderwerp
+        name:
+          label: Auteur
+        changed:
+          label: Bijgewerkt
+        operations:
+          label: Bewerkingen
+      pager:
+        options:
+          tags:
+            next: 'volgende ›'
+            previous: '‹ vorige'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      filters:
+        subject:
+          expose:
+            label: Onderwerp
+        langcode:
+          expose:
+            label: Taal
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Actie
+        subject:
+          label: Onderwerp
+        name:
+          label: Auteur
+        changed:
+          label: Bijgewerkt
+        operations:
+          label: Bewerkingen
+      filters:
+        subject:
+          expose:
+            label: Onderwerp
+        langcode:
+          expose:
+            label: Taal

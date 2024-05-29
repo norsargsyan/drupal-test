@@ -1,0 +1,26 @@
+
+#navbar-main {
+  padding: 24px 24px;
+}
+
+body:not([data-toolbar-menu]) {
+  #navbar-main {
+    @extend .sticky-top;
+
+    &.sticky-top {
+      top: -1px;
+    }
+
+    padding: 64px 44px;
+
+    transition: 0.3s padding ease-out;
+
+    &.is-pinned {
+      padding: 24px 24px;
+    }
+  }
+}
+
+#navbar-main .navbar-nav .nav-link.active, #navbar-main .navbar-nav .show > .nav-link, #navbar-main .navbar-nav .nav-link:hover {
+  color: $green;
+}

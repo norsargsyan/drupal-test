@@ -1,0 +1,61 @@
+Hi Ashot
+
+
+
+Thanks for the conversation yesterday.
+
+We would like to take the next step and have you do a Drupal test assignment.
+
+Your goal is to set up a Drupal 9 / 10 website that demonstrates the requested competencies.
+
+
+
+Analogous to the wireframes, you will set up a Drupal 9 / 10 website with 3 content types.
+
+News
+Articles
+Offices
+
+
+You should be able to see the fields required by these types from the attached wireframes (see attachment).
+
+Articles can be linked to offices and have tags from a taxonomy list that can be filtered.
+
+Offices have a country field on which to filter.
+
+
+
+The idea is to set up a custom theme and provide a basic responsive layout using sass.
+
+The menu bar narrows as you scroll down and stays fixed.
+
+
+
+Also consider the following features/elements:
+
+
+
+Drupal Webforms
+Paragraphs of Layout Builder
+Text
+Text + Image (option to place image on left or right)
+Video (Vimeo/YouTube link)
+Installing modules via Composer
+Experimenting with Drupal Config (drush cim and drush cex)
+Where does a client best take into account to make a website SEO proof? (E.g. meta tags / XML sitemap)
+Focal Point / Crop function on an image field
+What modules do you find interesting with a basic Drupal website?
+Custom controller 'Hello World' page (https://www.drupal.org/docs/drupal-apis/routing-system/introductory-drupal-routes-and-controllers-example)
+
+
+Implement general search with Search API (Facets / Autocomplete) on one content type
+
+
+Multilingual website with language switcher (Dutch and English). Main language is English.
+One content type provided with asynchronous paragraphs.
+This means that a node in Dutch contains 2 paragraphs (e.g. text and video) and the translated English node can only contain 1 paragraph (e.g. text only).
+Import a country list (country title only) using the following service http://country.io/names.json
+
+
+Feel free to give us a call back when you are done with this assignment, so we can review it at in a Teams call.
+Good luck and see you soon!

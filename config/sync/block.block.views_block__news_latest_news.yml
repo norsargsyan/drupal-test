@@ -1,0 +1,33 @@
+uuid: 67518908-4c8b-424d-9cdf-c8e6c0d73276
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - bootstrap_subtheme
+third_party_settings:
+  block_classes:
+    block_class: 'col-12 col-md-5'
+id: views_block__news_latest_news
+theme: bootstrap_subtheme
+region: featured_bottom_first
+weight: -9
+provider: null
+plugin: 'views_block:news-latest_news'
+settings:
+  id: 'views_block:news-latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

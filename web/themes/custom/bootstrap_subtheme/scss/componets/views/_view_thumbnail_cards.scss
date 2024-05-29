@@ -1,0 +1,21 @@
+.thumbnail-card {
+  .views-field-field-image, .views-field-field-office-featured-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .views-field-title {
+    border-right: 1px solid $gray-500;
+    border-left: 1px solid $gray-500;
+    padding: 12px;
+  }
+
+  .views-field-field-content {
+    border-right: 1px solid $gray-500;
+    border-left: 1px solid $gray-500;
+    border-bottom: 1px solid $gray-500;
+    padding: 0 12px 12px;
+    margin-bottom: 12px;
+  }
+}

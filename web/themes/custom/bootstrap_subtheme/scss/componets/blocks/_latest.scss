@@ -1,0 +1,17 @@
+.block-views-blocknews-latest-news, .block-views-blockarticles-latest-articles {
+  @extend .border, .border-primary, .p-4;
+  @extend .col-6;
+
+  .view-content .views-row {
+    @extend .p-2;
+    border-bottom: 1px solid $black;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .more-link {
+    text-align: right;
+  }
+}

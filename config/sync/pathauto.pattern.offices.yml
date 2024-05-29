@@ -1,0 +1,22 @@
+uuid: 23ba29a3-dc68-4832-917e-0cc03800e942
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: offices
+label: Offices
+type: 'canonical_entities:node'
+pattern: 'office/[node:title]'
+selection_criteria:
+  6397ee3a-707a-4dbf-8d6a-59e75b5a1c3f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6397ee3a-707a-4dbf-8d6a-59e75b5a1c3f
+    context_mapping:
+      node: node
+    bundles:
+      offices: offices
+selection_logic: and
+weight: 0
+relationships: {  }

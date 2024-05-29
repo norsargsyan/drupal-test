@@ -1,0 +1,53 @@
+label: Bestanden
+display:
+  default:
+    display_title: Standaard
+    display_options:
+      title: Bestanden
+      fields:
+        filename:
+          label: Naam
+        filesize:
+          label: Grootte
+        status:
+          label: Status
+        changed:
+          label: Aanpassingsdatum
+        count:
+          label: 'Gebruikt in'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      filters:
+        status:
+          expose:
+            label: Status
+  page_1:
+    display_options:
+      menu:
+        title: Bestanden
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: Entiteitstype
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      arguments:
+        fid:
+          exception:
+            title: Alle

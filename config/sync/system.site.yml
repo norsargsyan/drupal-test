@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 6e2ce232-cb25-4018-836c-cf587680b64c
+name: 'Drupal Test'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /calibrate
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

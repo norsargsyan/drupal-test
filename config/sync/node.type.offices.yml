@@ -1,0 +1,18 @@
+uuid: 70be2fe7-d5f4-44c9-8f2a-c8bea5ec23b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Offices
+type: offices
+description: 'Use <em>offices</em> for your static content'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

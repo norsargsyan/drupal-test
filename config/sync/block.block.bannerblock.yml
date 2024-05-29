@@ -1,0 +1,22 @@
+uuid: 1369b6e4-68b1-486b-aa8d-da97acdeb90d
+langcode: en
+status: true
+dependencies:
+  module:
+    - calibrate_core
+  theme:
+    - bootstrap_subtheme
+id: bannerblock
+theme: bootstrap_subtheme
+region: top_header
+weight: -6
+provider: null
+plugin: banner_block
+settings:
+  id: banner_block
+  label: 'Banner block'
+  label_display: '0'
+  provider: calibrate_core
+  banner_image: '1'
+  banner_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+visibility: {  }

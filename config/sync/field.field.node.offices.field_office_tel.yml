@@ -1,0 +1,21 @@
+uuid: 0443f3ef-cdae-4409-b496-168b083ad919
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_tel
+    - node.type.offices
+  module:
+    - telephone
+id: node.offices.field_office_tel
+field_name: field_office_tel
+entity_type: node
+bundle: offices
+label: Tel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

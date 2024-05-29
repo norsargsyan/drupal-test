@@ -1,0 +1,33 @@
+uuid: 7a1576d4-001b-42de-a949-13c83b5bd91c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - bootstrap_subtheme
+third_party_settings:
+  block_classes:
+    block_class: 'col-12 col-md-5 ms-auto'
+id: views_block__articles_latest_articles
+theme: bootstrap_subtheme
+region: featured_bottom_first
+weight: -8
+provider: null
+plugin: 'views_block:articles-latest_articles'
+settings:
+  id: 'views_block:articles-latest_articles'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

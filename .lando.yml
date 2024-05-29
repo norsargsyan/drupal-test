@@ -1,0 +1,11 @@
+name: drupal-test
+recipe: drupal10
+config:
+  webroot: web
+tooling:
+  phpcs:
+    service: appserver
+    cmd: /app/vendor/bin/phpcs
+  phpcbf:
+    service: appserver
+    cmd: /app/vendor/bin/phpcbf

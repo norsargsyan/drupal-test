@@ -1,0 +1,9 @@
+<div
+  class="position-relative overflow-hidden banner-block-wrapper"
+>
+  <img src="{{ image.url }}" alt="{{ image.alt }}">
+  <span class="overlay"></span>
+  {% if text %}
+    <span class="page-title position-absolute text-white font-weight-bold text-align-center position-center">{{ text }}</span>
+  {% endif %}
+</div>

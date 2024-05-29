@@ -1,0 +1,7 @@
+calibrate_core.homepage:
+  path: '/calibrate'
+  defaults:
+    _controller: '\Drupal\calibrate_core\Controller\CalibrateHomeController::homepage'
+    _title: 'Calibrate'
+  requirements:
+    _permission: 'access content'
